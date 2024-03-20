@@ -1,0 +1,35 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.relative {
+	position: relative;
+}
+
+.character {
+    position: absolute;
+    /* transition: left 0.3s, top 0.3s;  */
+}
+
+.character img {
+    width: 150px;
+    height: auto; 
+}
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+
+.cake, .stick, .candy {
+	position: absolute;
+}
+.ant {
+	background-color: blueviolet;
+}
+.invisAnt {
+	position: absolute;
+	/* background-color: aqua; */
+
+}
