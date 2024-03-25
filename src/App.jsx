@@ -15,8 +15,9 @@ function App() {
 		<div className='container'>
 			<h1>Welcome to CandyCatch!</h1>
 			<p>Catch candies but make sure to avoid the ant!</p>
+			<p>Use the arrow keys to move around.</p>
 		</div>
-		{/* <h2>🐜</h2> TODO: Add enemy */}
+		
 		<div className='relative'>
 			<RandomAnt randomAnt={randomAnt} setRandomAnt={setRandomAnt} />
 			<MoveCharacter position={position} setPosition={setPosition} randomPosition={randomPosition} setRandomPosition={setRandomPosition} randomAnt={randomAnt} setRandomAnt={setRandomAnt}/>
