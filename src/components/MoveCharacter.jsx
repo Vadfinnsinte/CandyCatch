@@ -50,23 +50,28 @@ const MoveCharacter = ({position, setPosition, randomPosition, setRandomPosition
 	
 	useEffect(() => {
 		const threshold = 30;
+		let adjustedthreshold = threshold
+		if (leftArrowPressed) {
+			adjustedthreshold = 15
+		}
+		// console.log(adjustedthreshold);
 		
 		
 		if(
-			Math.abs(randomPosition.x - position.x) < threshold &&
-			Math.abs(randomPosition.y - position.y) < threshold)
+			Math.abs(randomPosition.x - position.x) < adjustedthreshold &&
+			Math.abs(randomPosition.y - position.y) < adjustedthreshold)
 			{	
 				setCount(count +1)
 				// console.log("samma", count);
 				setRandomPosition({...randomPosition, x: Math.floor(Math.random()* 500), y: Math.floor(Math.random()* 500)})
 			}
 			
-			else if (Math.abs(randomAnt.x - position.x) < threshold && Math.abs(randomAnt.y - position.y) < threshold) {
+			else if (Math.abs(randomAnt.x - position.x) < adjustedthreshold && Math.abs(randomAnt.y - position.y) < adjustedthreshold) {
 				setCount(count - 2);
 				setRandomAnt({...randomAnt, x: Math.floor(Math.random()* 500), y: Math.floor(Math.random()* 500)
 				});
 			}
-		}, [position]);
+		}, [position, leftArrowPressed]);
 		
 		return (
 			<>

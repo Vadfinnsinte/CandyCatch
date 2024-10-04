@@ -16,6 +16,7 @@ function App() {
 			<h1>Welcome to CandyCatch!</h1>
 			<p>Catch candies but make sure to avoid the ant!</p>
 			<p>Use the arrow keys to move around.</p>
+			<p className='small-ps'>[ps. use your mouth to eat candy!]</p>
 		</div>
 		
 		<div className='relative'>

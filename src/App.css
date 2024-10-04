@@ -3,9 +3,25 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: rgb(190, 179, 202);
-}
+	color: rgb(66, 36, 66);
+	/* background-image: url("https://8sidor.se/wp-content/uploads/2020/09/godis.jpg"); */
+	border-radius: 20%;
+	background-color: rgba(150, 223, 198, 0.671);
+	text-align: center;
+  	font-family: "Sixtyfour Convergence", sans-serif;
+ 	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+  /* font-variation-settings:
+    "BLED" 7,
+    "SCAN" 7,
+    "XELA" 7,
+    "YELA" 8; */
 
+}
+.small-ps {
+	font-size: small;
+}
 .relative {
 	position: relative;
 }
